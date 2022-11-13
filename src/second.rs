@@ -67,7 +67,7 @@ impl<T> Iterator for IntoIter<T> {
 }
 
 pub struct Iter<'a, T> {
-	next: Option<&'a Node<T>>
+	next: Option<&'a Node<T>>,
 }
 
 impl<'a, T> Iterator for Iter<'a, T> {
@@ -82,7 +82,7 @@ impl<'a, T> Iterator for Iter<'a, T> {
 }
 
 pub struct IterMut<'a, T> {
-	next: Option<&'a mut Node<T>>
+	next: Option<&'a mut Node<T>>,
 }
 
 impl<'a, T> Iterator for IterMut<'a, T> {
